@@ -22,4 +22,8 @@
     <string name="tres_semestres">3 semestres</string>
     <string name="desempenho">Desempenho</string>
     <string name="matricula_aluno">20151001018</string>
+    <string name="ano_2022">2022</string>
+    <string name="siop">SIOP</string>
+    <string name="setenta_e_sete">77</string>
+    <string name="concluido">Concluído</string>
 </resources>

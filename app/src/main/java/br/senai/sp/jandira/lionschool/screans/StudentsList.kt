@@ -222,19 +222,19 @@ fun TelaStudentsList(){
 
                 Row (
                     modifier = Modifier
-                        .background(color = Color.Red)
-                        .fillMaxSize()
-                        .height(100.dp),
+
+                        .fillMaxSize(),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Card (
                         modifier = Modifier
                             .fillMaxHeight()
+                            .padding(end = 8.dp)
                             .width(10.dp),
                         colors = CardDefaults.cardColors(
                             containerColor = Color(0xFFFFC23D)
                         ),
-                        shape = RectangleShape
+                        shape = RectangleShape,
                     ){}
                     Card (
                         shape = CircleShape,
@@ -243,17 +243,49 @@ fun TelaStudentsList(){
                     ) {  }
                     Column(
                         modifier = Modifier
-                            .fillMaxHeight(),
+                            .fillMaxHeight()
+                            .padding(8.dp),
                         verticalArrangement = Arrangement.Center
                     ) {
                         Text(
                             text = stringResource(R.string.nome_aluno),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally)
+                                .padding(bottom = 3.dp),
+                            color = Color.White
 
                         )
+                       Row {
+                           Image(
+                               painter = painterResource(R.drawable.identidade),
+                               contentDescription = stringResource(R.string.logo_description),
+                               modifier = Modifier
+                                   .size(15.dp)
+                           )
+                           Text(
+                               text = stringResource(R.string.matricula_aluno),
+                               modifier = Modifier
+                                   .padding(start = 3.dp),
+                               color = Color.White
+                           )
+                       }
+                    }
+
+                    Row (
+                        modifier = Modifier
+                            .padding(top = 45.dp, start = 60.dp)
+                    ){
+                        Image(
+                            painter = painterResource(R.drawable.calendario),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
                         Text(
-                            text = stringResource(R.string.matricula_aluno)
+                            text = stringResource(R.string.ano_2022),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color(0xFFFFC23D)
                         )
                     }
                 }
@@ -268,6 +300,76 @@ fun TelaStudentsList(){
 
                 )
             ){
+                Row (
+                    modifier = Modifier
+
+                        .fillMaxSize(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Card (
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(end = 8.dp)
+                            .width(10.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFFFFC23D)
+                        ),
+                        shape = RectangleShape,
+                    ){}
+                    Card (
+                        shape = CircleShape,
+                        modifier = Modifier
+                            .size(60.dp)
+                    ) {  }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        Text(
+                            text = stringResource(R.string.nome_aluno),
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(bottom = 3.dp),
+                            color = Color.White
+
+                        )
+                        Row {
+                            Image(
+                                painter = painterResource(R.drawable.identidade),
+                                contentDescription = stringResource(R.string.logo_description),
+                                modifier = Modifier
+                                    .size(15.dp)
+                            )
+                            Text(
+                                text = stringResource(R.string.matricula_aluno),
+                                modifier = Modifier
+                                    .padding(start = 3.dp),
+                                color = Color.White
+                            )
+                        }
+                    }
+
+                    Row (
+                        modifier = Modifier
+                            .padding(top = 45.dp, start = 60.dp),
+
+                    ){
+                        Image(
+                            painter = painterResource(R.drawable.calendario),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
+                        Text(
+                            text = stringResource(R.string.ano_2022),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color(0xFFFFC23D)
+                        )
+                    }
+                }
 
             }
             Card (
@@ -279,7 +381,77 @@ fun TelaStudentsList(){
                     containerColor = Color(0xFF9FA9E1)
 
                 )
-            ){  }
+            ){
+                Row (
+                    modifier = Modifier
+
+                        .fillMaxSize(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Card (
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(end = 8.dp)
+                            .width(10.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFFFFC23D)
+                        ),
+                        shape = RectangleShape,
+                    ){}
+                    Card (
+                        shape = CircleShape,
+                        modifier = Modifier
+                            .size(60.dp)
+                    ) {  }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        Text(
+                            text = stringResource(R.string.nome_aluno),
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(bottom = 3.dp),
+                            color = Color.White
+
+                        )
+                        Row {
+                            Image(
+                                painter = painterResource(R.drawable.identidade),
+                                contentDescription = stringResource(R.string.logo_description),
+                                modifier = Modifier
+                                    .size(15.dp)
+                            )
+                            Text(
+                                text = stringResource(R.string.matricula_aluno),
+                                modifier = Modifier
+                                    .padding(start = 3.dp),
+                                color = Color.White
+                            )
+                        }
+                    }
+
+                    Row (
+                        modifier = Modifier
+                            .padding(top = 45.dp, start = 60.dp)
+                    ){
+                        Image(
+                            painter = painterResource(R.drawable.calendario),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
+                        Text(
+                            text = stringResource(R.string.ano_2022),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color(0xFFFFC23D)
+                        )
+                    }
+                }
+            }
             Card (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -289,7 +461,77 @@ fun TelaStudentsList(){
                     containerColor = Color(0xFF9FA9E1)
 
                 )
-            ){  }
+            ){
+                Row (
+                    modifier = Modifier
+
+                        .fillMaxSize(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Card (
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(end = 8.dp)
+                            .width(10.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFFFFC23D)
+                        ),
+                        shape = RectangleShape,
+                    ){}
+                    Card (
+                        shape = CircleShape,
+                        modifier = Modifier
+                            .size(60.dp)
+                    ) {  }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        Text(
+                            text = stringResource(R.string.nome_aluno),
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(bottom = 3.dp),
+                            color = Color.White
+
+                        )
+                        Row {
+                            Image(
+                                painter = painterResource(R.drawable.identidade),
+                                contentDescription = stringResource(R.string.logo_description),
+                                modifier = Modifier
+                                    .size(15.dp)
+                            )
+                            Text(
+                                text = stringResource(R.string.matricula_aluno),
+                                modifier = Modifier
+                                    .padding(start = 3.dp),
+                                color = Color.White
+                            )
+                        }
+                    }
+
+                    Row (
+                        modifier = Modifier
+                            .padding(top = 45.dp, start = 60.dp)
+                    ){
+                        Image(
+                            painter = painterResource(R.drawable.calendario),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
+                        Text(
+                            text = stringResource(R.string.ano_2022),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color(0xFFFFC23D)
+                        )
+                    }
+                }
+            }
             Card (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -299,7 +541,75 @@ fun TelaStudentsList(){
                     containerColor = Color(0xFF9FA9E1)
 
                 )
-            ){  }
+            ){ Row (
+                modifier = Modifier
+
+                    .fillMaxSize(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Card (
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .padding(end = 8.dp)
+                        .width(10.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xFFFFC23D)
+                    ),
+                    shape = RectangleShape,
+                ){}
+                Card (
+                    shape = CircleShape,
+                    modifier = Modifier
+                        .size(60.dp)
+                ) {  }
+                Column(
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .padding(8.dp),
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = stringResource(R.string.nome_aluno),
+                        modifier = Modifier
+                            .align(Alignment.CenterHorizontally)
+                            .padding(bottom = 3.dp),
+                        color = Color.White
+
+                    )
+                    Row {
+                        Image(
+                            painter = painterResource(R.drawable.identidade),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
+                        Text(
+                            text = stringResource(R.string.matricula_aluno),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color.White
+                        )
+                    }
+                }
+
+                Row (
+                    modifier = Modifier
+                        .padding(top = 45.dp, start = 60.dp)
+                ){
+                    Image(
+                        painter = painterResource(R.drawable.calendario),
+                        contentDescription = stringResource(R.string.logo_description),
+                        modifier = Modifier
+                            .size(15.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.ano_2022),
+                        modifier = Modifier
+                            .padding(start = 3.dp),
+                        color = Color(0xFFFFC23D)
+                    )
+                }
+            } }
             Card (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -309,7 +619,77 @@ fun TelaStudentsList(){
                     containerColor = Color(0xFF9FA9E1)
 
                 )
-            ){  }
+            ){
+                Row (
+                    modifier = Modifier
+
+                        .fillMaxSize(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Card (
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(end = 8.dp)
+                            .width(10.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFFFFC23D)
+                        ),
+                        shape = RectangleShape,
+                    ){}
+                    Card (
+                        shape = CircleShape,
+                        modifier = Modifier
+                            .size(60.dp)
+                    ) {  }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        Text(
+                            text = stringResource(R.string.nome_aluno),
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(bottom = 3.dp),
+                            color = Color.White
+
+                        )
+                        Row {
+                            Image(
+                                painter = painterResource(R.drawable.identidade),
+                                contentDescription = stringResource(R.string.logo_description),
+                                modifier = Modifier
+                                    .size(15.dp)
+                            )
+                            Text(
+                                text = stringResource(R.string.matricula_aluno),
+                                modifier = Modifier
+                                    .padding(start = 3.dp),
+                                color = Color.White
+                            )
+                        }
+                    }
+
+                    Row (
+                        modifier = Modifier
+                            .padding(top = 45.dp, start = 60.dp)
+                    ){
+                        Image(
+                            painter = painterResource(R.drawable.calendario),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(15.dp)
+                        )
+                        Text(
+                            text = stringResource(R.string.ano_2022),
+                            modifier = Modifier
+                                .padding(start = 3.dp),
+                            color = Color(0xFFFFC23D)
+                        )
+                    }
+                }
+            }
 
         }
     }

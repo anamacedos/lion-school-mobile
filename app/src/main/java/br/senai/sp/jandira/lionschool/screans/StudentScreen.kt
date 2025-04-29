@@ -116,16 +116,212 @@ fun TelaStudentScreen(){
                     .height(450.dp),
                 colors = CardDefaults.cardColors(
                     containerColor = Color(0xff9FA9E1)
-                )
+                ),
+
             ){
                 Column (
-                    horizontalAlignment = Alignment.CenterHorizontally
+                    modifier = Modifier
+                        .fillMaxSize()
                 ){
                     Text(
                         text = stringResource(R.string.desempenho),
                         fontSize = 20.sp,
-                        color = Color.White
+                        color = Color.White,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 22.dp, bottom = 40.dp),
+                        textAlign = TextAlign.Center,
+                        fontWeight = FontWeight.SemiBold
                     )
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            stringResource(R.string.siop),
+                            modifier = Modifier
+                                .padding(end = 20.dp),
+                            color = Color.White
+                        )
+                        Card (
+                            modifier = Modifier
+                                .width(200.dp)
+                                .height(22.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color(0xFFFFFFFF)
+                            )
+                        ) {  }
+                        Text(
+                            stringResource(R.string.setenta_e_sete),
+                            modifier = Modifier
+                                .padding(start = 20.dp),
+                            color = Color.White
+                        )
+                    }
+                    Row (
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 20.dp, top = 40.dp, end = 20.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.End
+                    ){
+                        Image(
+                            painterResource(R.drawable.ok),
+                            contentDescription = stringResource(R.string.logo_description),
+                            modifier = Modifier
+                                .size(30.dp),
+
+                        )
+                        Text(
+                            stringResource(R.string.concluido),
+                            fontSize = 20.sp,
+                            color = Color(0xff3347B0),
+                            fontWeight = FontWeight.SemiBold
+                        )
+                    }
                 }
             }
 
